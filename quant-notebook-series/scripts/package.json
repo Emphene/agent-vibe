@@ -1,0 +1,10 @@
+{
+  "name": "quant-notebook-series-checks",
+  "private": true,
+  "type": "module",
+  "description": "Headless Mermaid syntax check used by check_mermaid.py. Install once: npm install",
+  "dependencies": {
+    "jsdom": "30.1.3",
+    "mermaid": "11.4.1"
+  }
+}
