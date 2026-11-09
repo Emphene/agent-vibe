@@ -1,0 +1,181 @@
+# GENERATED FILE — do not edit by hand.
+#
+# Source of truth: the Central Brain (`central-brain`) pyproject.toml
+# + uv.lock — that is the only place humans edit dependencies. This file is
+# their exact-pin transport to the agents, exported by
+# `sync_engine.py export-requirements` (uv export) and rendered into each
+# agent's root by `sync-docs` (automatic on every `pull`).
+#
+# Dependency change workflow:
+#   1. In the Central Brain, edit pyproject.toml (or: uv lock --upgrade-package
+#      <pkg>), then `uv sync`
+#   2. <engine> export-requirements
+#   3. <engine> central-push -m "deps: <what changed>"
+#   4. In every agent: <engine> pull && <engine> sync-env
+#
+
+anyio==4.15.1 ; sys_platform != 'emscripten'
+    # via starlette
+asttokens==3.0.2
+    # via stack-data
+cffi==2.1.1 ; implementation_name == 'pypy' and sys_platform != 'emscripten'
+    # via pyzmq
+click==8.5.0 ; sys_platform != 'emscripten'
+    # via
+    #   marimo
+    #   uvicorn
+colorama==0.4.6 ; sys_platform == 'win32'
+    # via ipython
+contourpy==1.4.0
+    # via matplotlib
+cycler==0.12.1
+    # via matplotlib
+docutils==0.23
+    # via marimo
+executing==2.3.0
+    # via stack-data
+fonttools==4.67.0
+    # via matplotlib
+formulaic==1.2.2
+    # via statsmodels
+gitdb==4.0.12
+    # via gitpython
+gitpython==3.2.1
+    # via central-brain
+h11==0.16.0 ; sys_platform != 'emscripten'
+    # via uvicorn
+idna==3.20 ; sys_platform != 'emscripten'
+    # via anyio
+interface-meta==2.0.1
+    # via formulaic
+ipython==9.17.1
+    # via central-brain
+ipython-pygments-lexers==1.1.1
+    # via ipython
+itsdangerous==2.2.0
+    # via marimo
+jedi==0.20.1
+    # via
+    #   ipython
+    #   marimo
+kiwisolver==1.5.1
+    # via matplotlib
+loro==1.16.2 ; python_full_version < '3.15' and sys_platform != 'android' and sys_platform != 'emscripten'
+    # via marimo
+marimo==0.25.2
+    # via central-brain
+markdown==3.11.2
+    # via
+    #   marimo
+    #   pymdown-extensions
+matplotlib==3.11.2
+    # via central-brain
+matplotlib-inline==0.2.2
+    # via ipython
+msgspec==0.22.0
+    # via marimo
+narwhals==2.27.1
+    # via
+    #   formulaic
+    #   marimo
+numpy==2.5.4
+    # via
+    #   central-brain
+    #   contourpy
+    #   formulaic
+    #   matplotlib
+    #   pandas
+    #   patsy
+    #   scipy
+    #   statsmodels
+packaging==26.3
+    # via
+    #   marimo
+    #   matplotlib
+    #   patsy
+    #   statsmodels
+pandas==3.1.0
+    # via
+    #   central-brain
+    #   formulaic
+    #   statsmodels
+parso==0.8.7
+    # via jedi
+patsy==1.0.3
+    # via statsmodels
+pexpect==4.9.0 ; sys_platform != 'emscripten' and sys_platform != 'win32'
+    # via ipython
+pillow==13.0.0
+    # via matplotlib
+prompt-toolkit==3.0.53
+    # via ipython
+psutil==7.2.2 ; sys_platform != 'emscripten'
+    # via
+    #   ipython
+    #   marimo
+ptyprocess==0.7.0 ; sys_platform != 'emscripten' and sys_platform != 'win32'
+    # via pexpect
+pure-eval==0.2.4
+    # via stack-data
+pycparser==3.12 ; implementation_name == 'pypy' and sys_platform != 'emscripten'
+    # via cffi
+pygments==2.21.0
+    # via
+    #   ipython
+    #   ipython-pygments-lexers
+    #   marimo
+pymdown-extensions==11.0.2
+    # via marimo
+pyparsing==3.3.3
+    # via matplotlib
+python-dateutil==3.0.0
+    # via
+    #   matplotlib
+    #   pandas
+python-multipart==0.0.32
+    # via marimo
+pyyaml==6.0.3
+    # via
+    #   marimo
+    #   pymdown-extensions
+pyzmq==27.2.0 ; sys_platform != 'emscripten'
+    # via marimo
+quantlib==1.44
+    # via central-brain
+scipy==1.18.1
+    # via
+    #   central-brain
+    #   formulaic
+    #   statsmodels
+six==1.17.0
+    # via python-dateutil
+smmap==5.0.3
+    # via gitdb
+stack-data==0.6.3
+    # via ipython
+starlette==1.9.0 ; sys_platform != 'emscripten'
+    # via marimo
+statsmodels==0.15.0
+    # via central-brain
+tomlkit==0.15.2
+    # via marimo
+traitlets==5.16.1
+    # via
+    #   ipython
+    #   matplotlib-inline
+typing-extensions==4.16.0
+    # via
+    #   anyio
+    #   formulaic
+tzdata==2026.5
+    # via
+    #   pandas
+    #   python-dateutil
+uvicorn==0.54.0 ; sys_platform != 'emscripten'
+    # via marimo
+wcwidth==0.9.3
+    # via prompt-toolkit
+websockets==17.3 ; sys_platform != 'emscripten'
+    # via marimo
+wrapt==2.5.1
+    # via formulaic

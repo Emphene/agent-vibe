@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+__marimo__/
+.vscode/
+
+# npm artifacts — never commit these: `node_modules/` matches at any depth,
+# and no lockfile may enter the shared skills subtree (a `push` would publish
+# it to skills-split and every agent would download it on every `pull`).
+node_modules/
+.agents/skills/**/package-lock.json
+
+# do not publish agent work
+common/
+notebooks/
+scripts/
